@@ -12,7 +12,7 @@ export class AppComponent {
   constructor(public http: HttpClient) {}
 
   getData() {
-    const url = 'http://testing.ddev.site/rest/events'
+    const url = 'https://projetoaula.ddev.site/rest/events'
     this.http.get(url).subscribe((res) => {
       this.data = res
       console.log(this.data)

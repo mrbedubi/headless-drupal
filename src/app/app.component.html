@@ -1,8 +1,21 @@
 <h1>Eventos</h1>
 <div class="events">
   <div class="event" *ngFor="let node of data">
-    <img [src]="'http://testing.ddev.site/' + node.field_event_image">
-    <div class="desc">{{ node.title }}</div>
-   </div>
+    <img [src]="'http://projetoaula.ddev.site/' + node.field_image">
+    <div class=" desc">{{ node.title_1 }}
+    </div>
+    <div class="date">
+
+      <span><b>Data de Inicio:</b>
+        <div>{{node.field_start_date}}
+        </div>
+      </span>
+
+      <span>
+        <b>Data de Fim:</b>
+        <div> {{node.field_end_date}}
+        </div>
+      </span>
+    </div>
+  </div>
 </div>
- 
